@@ -137,7 +137,7 @@ function createPost(avatar, author, location, img, likes, user, comment, btnsObj
 
 function likeBtnFunction(event) {
     posts.map( (item) => {
-        if (`http://127.0.0.1:5500/${item.post}` === event.target.parentElement.previousElementSibling.src) {
+        if (event.target.parentElement.previousElementSibling.src.indexOf(item.post) !== - 1) {
             item.likes++;
             event.target.parentElement.nextElementSibling.textContent = `${item.likes} likes`;
         }
@@ -148,7 +148,7 @@ function likeBtnFunction(event) {
 
 function likesIncrement(event) {
     posts.map( (item) => {
-        if (`http://127.0.0.1:5500/${item.post}` === event.target.src) {
+        if (event.target.src.indexOf(item.post) !== - 1) {
             item.likes++;
             event.target.nextElementSibling.nextElementSibling.textContent = `${item.likes} likes`;
         }
