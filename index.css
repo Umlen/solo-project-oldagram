@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    background-color: #F5F5F5;
+}
+
+header, main {
+    min-width: 375px;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1rem;
+    border-bottom: 1px solid #C6C6C6;
+    background-color: #ffffff;
+}
+
+p {
+    margin: 0;
+}
+
+.bold-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.logo {
+    height: 6rem;
+}
+
+.avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.post {
+    background-color: #ffffff;
+}
+
+.post:not(:last-of-type) {
+    margin-bottom: 2rem;
+}
+
+.post-user-info {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.post-user-info .avatar,
+.post-comments .bold-text  {
+    margin-right: 1rem;
+}
+
+.post-user-info .bold-text {
+    margin-bottom:.5rem;
+}
+
+.user-info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-img {
+    width: 100%;
+    height: auto;
+}
+
+.post-img:hover {
+    cursor: pointer;
+}
+
+.post-comments,
+.likes,
+.btns-container {
+    padding: .5rem 1rem;
+}
+
+.btn {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+
+.btn:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.like-btn:active {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.post-comments {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+}
